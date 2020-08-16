@@ -1,0 +1,477 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+	font-family:sans-serif;
+}
+h1{
+	color:black;
+	font-size:2.25rem;
+	text-align:center;
+	text-transform:uppercase;
+}
+h6{
+	color:#7b7bdc;
+	font-size:1.125rem;
+	font-weight:500;
+	text-align:center;
+}
+p{
+	color:gray;
+	line-height:1.8;
+	font-size:1rem;
+	text-align:center;
+}
+
+section{
+	padding-top:100px;
+	padding-bottom:50px;
+	}
+.container{
+	width:1100px;
+	margin:auto;
+	overflow:hidden;
+	text-align:center;
+}
+
+.col-33{
+	width:33%;
+	float:left;
+	text-align:center;
+}
+.col-25{
+	width:25%;
+	float:left;
+	text-align:center;
+}
+.col-50{
+	width:50%;
+	float:left;
+	text-align:center;
+}
+.content{
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:5px;
+}
+
+i{
+	font-size:2rem;
+	color:orange;
+	
+}
+.btn{
+	padding:10px 25px;
+	background-color:#5b9bf3;
+	border:0px;
+	border-radius:25px;
+	font-size:.95rem;
+	text-transform:uppercase;
+	color:white;
+	
+}
+/* -- Header Part -- */
+header{
+	padding-top:20px;
+	padding-bottom:4px;
+	width:100%;
+	position:fixed;
+	background:#00000036;
+	overflow:hidden;
+	z-index:99;
+}
+.company{
+	padding-left:35px;
+	float:left;
+}
+.company img{
+	float:left;
+	display:block;
+}
+.company h3{
+    float: left;
+    color: white;
+    margin: 15px;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-left: -3px;
+}
+#main-menu{
+	padding-right:35px;
+	float:right;
+	margin-top:15px;
+}
+#main-menu ul{
+	list-style:none;
+}
+#main-menu ul li{
+	float:left;
+	margin:auto 2px;
+}
+#main-menu ul li a{
+	padding:10px 25px;
+	text-transform:uppercase;
+	text-decoration:none;
+	color:white;
+}
+#main-menu ul li a:hover{
+	background-color:black;
+	color:#5b9bf3;
+
+}
+.active a{
+	background-color:black;
+	color:#5b9bf3 !important;
+}
+/* -- Home Part -- */
+#mobile-icon{
+	display:none;
+}
+#home{
+	background-image:url('../images/home_bg.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-bottom:0px;
+	
+}
+#home .author_text{
+	text-align:left;margin-top:200px;
+}
+#home p{
+	text-align:left;
+	color:orange;
+	font-size: 1.2rem;
+	text-transform:uppercase;
+}
+#home h6{
+	text-align:left;
+	color:white;
+	font-size: 1.34rem;
+	text-transform:uppercase;
+}
+#home h2{
+	color:orange;
+	font-size: 2.3rem;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+#home img{
+	width:auto;
+	height:550px;
+	margin-bottom: -10px;
+}
+/* -- About Me Part -- */
+
+#progress .col-33{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#progress h5{
+	text-align:left;
+	color: #353333bf;
+	text-transform:uppercase;
+}
+
+.progressbar{
+	width:100%;
+	height:10px;
+	background:#dcdcdc;
+	border-radius:5px;
+	margin:10px auto;
+}
+.progress-achieve{
+	height:10px;
+	width:100%;
+	background-color:yellow;
+	border-radius:5px;
+}
+
+
+/* -- Services Part -- */
+#service{
+    background-image:url(../images/service_bg.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+}
+
+#service h3{
+	margin-top:25px;
+	margin-bottom:25px;
+	color:white;
+	text-transform:uppercase;
+}
+#service h1{
+	margin-bottom:25px;
+	color:white;
+}
+#service h6{
+	color:white;
+}
+#service p{
+	font-size:.9rem;
+	color:white;
+}
+#service .content{
+	background-color:#757272cc;
+	border-radius:5px;
+	padding:55px;
+	margin-bottom:1.1rem;
+	transition:all 1s;
+	animation-name:xoomInMyBoxes;
+    animation-duration:2s;
+}
+#service .content:hover{
+	
+	background-color:#1acbd4;
+	cursor:pointer;
+	transform:scale(1.05);
+}
+#service .content:hover i{
+	color:black;
+}
+#service .content:hover p{
+	color:black;
+}
+#service .content:hover h3{
+	color:black;
+}
+#service p{
+	line-height:29px;
+}
+
+/* -- Project Part -- */
+
+#project a{
+	text-decoration:none;color:white;
+}
+#project h1{
+	margin-bottom:25px;
+}
+#project img{
+	width:100%;
+	height:250px;
+	margin-bottom: .7rem;
+}
+#project .content{
+	position:relative;
+}
+#project .overlay{
+	bottom:25px;
+	background:black;
+	left:10px;
+	right:10px;
+	padding:15px;
+	color:white;
+	text-transform:uppercase;
+	position:absolute;
+	display:none;
+}
+#project .content:hover .overlay{
+	display:block;
+}
+/* -- ================== Review Part ================== -- */
+#review{
+	background-image:url(../images/review-bgr.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+#review .content{
+	margin-bottom: 50px;
+    padding: 60px;
+    background-color: #00000040;
+}
+#review h1{
+	font-size:3rem;
+	color:white;
+	margin:25px auto 30px;
+}
+#review h5{
+	color:white;
+	font-size:1rem;
+}
+#review h1{
+	margin-bottom: 35px;
+    font-size: 2.5rem;
+    color: white;
+}
+/* -- ======================================= Contact Part ============================================== -- */
+#contact{
+    background-image: linear-gradient(#00000070,#00000078),linear-gradient(#0000007d,#0000007d),url(../images/contact_bg.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+}
+#contact form input , #contact form textarea{
+	background-color:transparent;
+	width:100%;
+	font-size:1rem;
+	padding:10px;
+	margin-bottom:15px;
+	border:1px solid white;
+	border-radius:5px;
+
+}
+#contact .btn{
+	border-radius:5px;
+	padding:15px 35px;
+	margin-top:15px;
+}
+#contact textarea{
+	height:150px;
+}
+#address{
+	margin:50px auto 25px;
+}
+#address p{
+	font-size:.9rem;
+	color:white;
+	margin-top:15px;
+}
+/*-- =============================================Footer Part============================================= --*/
+
+footer{
+	overflow:hidden;
+	background-color:#efefef;
+	padding:25px 0px;
+}
+#copyright{
+	float:left;
+	color:#484848;
+	margin-top:10px;
+}
+#social{
+	float:right;
+}
+#social ul{
+	list-style:none;
+}
+#social ul li{
+	float: left;
+    margin: auto 15px;
+    border: 1px solid gray;
+    width: 24px;
+    height: 25px;
+    padding-top: 2px;
+    border: 2px solid #484848;
+    border-radius: 50%;
+    text-align: center;
+}
+#social ul li:last-child{
+	margin-right:0px;
+}
+#social ul li a i{
+	font-size:.8rem;
+	color:#484848;
+	padding: 4px;
+}
+#upper{
+	height:35px;
+	width:40px;
+	position:fixed;
+	right:25px;
+	bottom:25px;
+	background-color:#757272;
+	text-align:center;
+	padding-top:10px;
+	display:none;
+}
+#upper i{
+	color:white;
+	font-size:1rem;
+}
+
+
+/* -- ======== Device Part ========== -- */
+
+@media(max-width:1100px){
+     .container{
+		 width:100%;
+	 }
+}
+@media(max-width:576px){
+    .col-25,.col-33,.col-50{
+		width:100%;
+	}
+	header{
+		background-color:#000000b8;
+	}
+	.company{
+		padding-left:10px;
+	}
+	.company img{ 
+		height:50px;
+	}
+	/* -- Menu Part -- */
+	#mobile-icon{
+		display:block;
+		position:absolute;
+		top:25px;
+		right:15px;
+	}
+	#main-menu{
+		width:100%;
+		padding-right:0;
+		margin-top:0;
+	}
+	#main-menu ul li{
+		float:none;
+	}
+	#main-menu ul li a{
+		display:block;
+	}
+	#main-menu ul li a:hover, .active a {
+		background-color: #cecece;
+		color: #050606 !important;
+}
+	/* -- Home Part -- */
+	#home .col-50{
+		width:50%; 
+	}
+	#home img{
+		height:198px;
+	}
+	#home .author_text{
+	    margin-top:50px;
+	}
+	#home p{
+		font-size:.75rem;
+	}
+	#home h6{
+		font-size:1rem;
+	}
+	#home h2{
+		font-size:1.22rem;
+		margin-bottom:10px;
+	}
+	#home .btn{
+		font-size:.75rem;
+		padding:10px;
+	}
+	/* -- Review Part -- */
+	#review .col-25{
+		width:50%;
+	}
+	#review .content{
+		margin-bottom:20px;
+	}
+	#review h5{
+		font-size:.81rem;
+	}
+	#review h1{
+		margin-top:1px;
+	}
+	/* -- Footer Part -- */
+	#copyright, #social{
+		float:none;
+	}
+	#social ul{
+		margin-left:25%;
+		margin-bottom:2%;
+	}
+	#address .col-33{
+		margin-top:20px;
+	}
+}
